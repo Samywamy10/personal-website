@@ -1,0 +1,21 @@
+h1 {
+    margin:0;
+    padding:0;
+    font-size:22pt;
+}
+
+section {
+    display:flex;
+}
+
+.experience-icon {
+    font-size:40px;
+}
+
+section > svg {
+    margin: 0 55px 0px calc(55px - 50px); /* subtract width of parent padding */
+}
+
+.article-content {
+    flex: 9
+}

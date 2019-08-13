@@ -1,0 +1,41 @@
+
+.information {
+    padding:0 25px 25px 25px;
+    margin-bottom:25px;
+    border-bottom: 1px solid #b86318;
+    line-height: 1.5;
+}
+
+.information:last-child {
+    border-bottom:0;
+}
+
+.information::after {
+    clear:both;
+    display:block;
+    content: ''
+}
+
+.icon {
+    font-size:20px;
+}
+
+.bio-text {
+    width:80%;
+    float:right;
+    text-align:justify;
+    margin-top:-5px;
+}
+
+.bio-text > p:first-child {
+    margin-top:0;
+}
+
+.bio-text > p:last-child {
+    margin-bottom:0;
+}
+
+.big-text {
+    font-size:20px;
+    font-weight:bold;
+}

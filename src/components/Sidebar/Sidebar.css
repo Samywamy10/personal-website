@@ -1,0 +1,28 @@
+.sidebar {
+    color: #ffffff;
+    background-color: #e67e22;
+    padding:30px;
+}
+
+.imageContainer {
+    position:relative;
+    
+}
+
+.profile {
+    width:calc(100% + 60px);
+    margin:-30px -30px 20px -30px;
+}
+
+.bio {
+    margin-bottom:50px;
+}
+
+.name {
+    font-size:40px;
+}
+
+.title {
+    font-size:28px;
+    color:#f5f5f5;
+}
