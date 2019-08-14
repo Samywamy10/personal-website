@@ -12,13 +12,13 @@ type ExperiencesTypes = {
 
 const Experiences: React.FC<ExperiencesTypes> = ({experiences, icon, title}) => {
   return (
-    <article>
+    <article className="experiences">
       <Card> 
         {icon}
         <div className="article-content">
           <h1>{title}</h1>
-          {experiences.map((experience) => 
-            <Experience experience={experience} />
+          {experiences.map((experience, index) => 
+            <Experience experience={experience} key={index} />
           )}
         </div>
       </Card>

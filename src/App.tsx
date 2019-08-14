@@ -8,8 +8,8 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
 import Navbar from './components/Navbar/Navbar';
 import { Box } from '@material-ui/core';
-import Card from './components/Card/Card';
 import SwipeableViews from 'react-swipeable-views';
+import Blog from './components/Blog/Blog';
 
 const workExperiences: ExperienceType[] = [
   {
@@ -80,27 +80,18 @@ const App: React.FC = () => {
     setCardValue(newValue);
   }
 
-  function handleChangeIndex(index: number) {
-    setCardValue(index);
-  }
-
   return (
     <div className="app">
       <Sidebar className="sidebar"/>
       <div className="content">
         <Navbar currentNavigationItem={cardValue} onChangeNavigation={handleChange} />
-        <SwipeableViews
-        index={cardValue}
-        onChangeIndex={handleChangeIndex}
-        >
-          <Box>
+        {cardValue === 0 ? <Box>
             <Experiences title="Work Experience" experiences={workExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faBriefcase} />}/>
-            <Experiences title="Education" experiences={educationExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faGraduationCap} />}/>
-          </Box>
+            <Experiences title="Education" experiences={educationExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faGraduationCap} />}/> 
+          </Box> : ''}
           <Box>
-            <Card>Hello</Card>
+            <Blog isVisible={cardValue === 1}/>
           </Box>
-        </SwipeableViews>
       </div>
     </div>
   );

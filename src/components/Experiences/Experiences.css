@@ -4,8 +4,21 @@ h1 {
     font-size:22pt;
 }
 
-section {
+.experiences section {
     display:flex;
+}
+
+.experiences {
+    margin-top:50px;
+    margin-bottom:50px;
+}
+
+.experiences:first-of-type {
+    margin-top:0;
+}
+
+.experiences:last-of-type {
+    margin-bottom:0;
 }
 
 .experience-icon {
