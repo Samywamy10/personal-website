@@ -6,6 +6,10 @@ import Experiences from './components/Experiences/Experiences';
 import ExperienceType from './models/ExperienceType';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons';
+import Navbar from './components/Navbar/Navbar';
+import { Box } from '@material-ui/core';
+import Card from './components/Card/Card';
+import SwipeableViews from 'react-swipeable-views';
 
 const workExperiences: ExperienceType[] = [
   {
@@ -70,12 +74,33 @@ const educationExperiences: ExperienceType[] = [
 ]
 
 const App: React.FC = () => {
+  const [cardValue, setCardValue] = React.useState(0);
+
+  function handleChange(_event: React.ChangeEvent<{}>, newValue: number) {
+    setCardValue(newValue);
+  }
+
+  function handleChangeIndex(index: number) {
+    setCardValue(index);
+  }
+
   return (
     <div className="app">
       <Sidebar className="sidebar"/>
       <div className="content">
-        <Experiences title="Work Experience" experiences={workExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faBriefcase} />}/>
-        <Experiences title="Education" experiences={educationExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faGraduationCap} />}/>
+        <Navbar currentNavigationItem={cardValue} onChangeNavigation={handleChange} />
+        <SwipeableViews
+        index={cardValue}
+        onChangeIndex={handleChangeIndex}
+        >
+          <Box>
+            <Experiences title="Work Experience" experiences={workExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faBriefcase} />}/>
+            <Experiences title="Education" experiences={educationExperiences} icon={<FontAwesomeIcon className="experience-icon" icon={faGraduationCap} />}/>
+          </Box>
+          <Box>
+            <Card>Hello</Card>
+          </Box>
+        </SwipeableViews>
       </div>
     </div>
   );
