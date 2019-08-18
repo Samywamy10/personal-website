@@ -20,6 +20,16 @@
     font-size:20px;
 }
 
+.social-icon {
+    color:white;
+    font-size:30px;
+    margin-right:20px;
+}
+
+.social-icon:hover {
+    color:#f0f0f0;
+}
+
 .bio-text {
     width:80%;
     float:right;
