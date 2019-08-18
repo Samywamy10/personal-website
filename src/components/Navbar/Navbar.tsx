@@ -1,4 +1,4 @@
-import React, { useEffect } from "react";
+import React from "react";
 import './Navbar.css';
 import Card from "../Card/Card";
 import Tabs from '@material-ui/core/Tabs';

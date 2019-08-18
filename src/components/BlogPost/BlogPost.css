@@ -23,3 +23,7 @@
 .blog-post a:hover {
     color:black;
 }
+
+.blog-post .gist {
+    max-width:700px;
+}
