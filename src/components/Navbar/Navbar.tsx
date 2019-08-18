@@ -1,21 +1,31 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Navbar.css';
 import Card from "../Card/Card";
 import Tabs from '@material-ui/core/Tabs';
 import Tab from '@material-ui/core/Tab';
+import { Link } from "react-router-dom";
 
-type NavbarProps = {
-    currentNavigationItem: number,
-    onChangeNavigation: (event: React.ChangeEvent<{}>, value: any) => void
-}
+const Navbar: React.FC = () => {
+    const [cardValue, setCardValue] = React.useState(0);
 
-const Navbar: React.FC<NavbarProps> = ({currentNavigationItem, onChangeNavigation}) => {
+    function handleChange(_event: React.ChangeEvent<{}>, newValue: number) {
+      setCardValue(newValue);
+    }
+    
+    useEffect(() => {
+        if(window.location.pathname === "/") {
+            setCardValue(0);
+        } else {
+            setCardValue(1);
+        }
+    },[])
+
 
     return (
         <Card className="navbar">
-            <Tabs value={currentNavigationItem} onChange={onChangeNavigation} variant="fullWidth" aria-label="simple tabs example">
-                <Tab label="Resume" />
-                <Tab label="Blog" />
+            <Tabs value={cardValue} onChange={handleChange} variant="fullWidth" aria-label="simple tabs example">
+                <Tab component={Link} to={'/'} label="Resume" />
+                <Tab component={Link} to={'/blog'} label="Blog" />
             </Tabs>
         </Card>
     )

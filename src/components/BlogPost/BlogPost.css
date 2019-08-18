@@ -5,3 +5,17 @@
 .blog-post {
     margin-bottom:50px;
 }
+
+.blog-post > h2 {
+    font-size:30px;
+    margin:0;
+}
+
+.blog-post a {
+    text-decoration: none;
+    color:inherit;
+}
+
+.blog-post a:hover {
+    color:black;
+}
