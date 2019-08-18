@@ -51,7 +51,7 @@ const workExperiences: ExperienceType[] = [
   
   const educationExperiences: ExperienceType[] = [
     {
-      title: "Bachelor of Informations & Computation Advanced (Honours)",
+      title: "Bachelor of Informatics & Computation Advanced (Honours)",
       organisation: "Monash University",
       startDate: Moment("03-01-2015","DD-MM-YYYY"),
       endDate: Moment("06-01-2019","DD-MM-YYYY"),
