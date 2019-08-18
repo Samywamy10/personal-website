@@ -1,10 +1,10 @@
 import React, { useEffect, useState } from "react";
 import './Blog.css';
-import RSSParser from 'rss-parser';
 import BlogPost from "../BlogPost/BlogPost";
 import { History } from "history";
+import RSSParser from 'rss-parser';
 
-type BlogTypes = {
+export type BlogTypes = {
     isVisible: boolean;
     match: {
         isExact: boolean,
@@ -14,31 +14,18 @@ type BlogTypes = {
         path: string,
         url: string
     },
-    history: History
+    history: History,
+    items: RSSParser.Item[]
 }
 
-const Blog: React.FC<BlogTypes> = ({isVisible = true, match, history}) => {
+const Blog: React.FC<BlogTypes> = ({isVisible = true, match, history, items}) => {
     const [currentPost] = useState(match.params.postname);
-    const [items, setItems] = useState<undefined | RSSParser.Item[]>([]);
-
-    async function fetchData() {
-        let parser = new RSSParser();
-        const CORS_PROXY = "https://cors-anywhere.herokuapp.com/"
-
-        parser.parseURL(CORS_PROXY + 'https://medium.com/feed/@samjwright', function(err, feed) {
-            setItems(feed.items ? feed.items : []);
-        });
-    }
-
-    useEffect(() => {
-        fetchData();
-    }, []);
 
     const [currentGuid, setCurrentGuid] = useState('');
 
     const onFocus = (guid: string) => {
         if(currentGuid !== guid) {
-            const post = items ? items.find(item => item.guid === guid) : '';
+            const post = items.find(item => item.guid === guid);
             if(post && post.title) {
                 const url = post.title.replace(/ /g,'-').toLocaleLowerCase();
                 history.push(`/blog/${url}`);
@@ -69,7 +56,7 @@ const Blog: React.FC<BlogTypes> = ({isVisible = true, match, history}) => {
         }
     });
 
-    const item = currentPost && items ? items.find(item => item.title ? item.title.toLocaleLowerCase() === currentPost.replace(/-/g,' ').toLocaleLowerCase() : '') : '';
+    const item = currentPost ? items.find(item => item.title ? item.title.toLocaleLowerCase() === currentPost.replace(/-/g,' ').toLocaleLowerCase() : '') : '';
     const itemGuid = item ? item.guid : '';
     return (
         <div className="blog">
