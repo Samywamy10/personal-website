@@ -27,7 +27,7 @@ const Navbar: React.FC<NavbarProps> = ({history}) => {
 
     return (
         <Card className="navbar">
-            <Tabs value={cardValue} onChange={handleChange} variant="fullWidth" aria-label="simple tabs example">
+            <Tabs value={cardValue} onChange={handleChange} indicatorColor='primary' variant="fullWidth" aria-label="simple tabs example">
                 <Tab value='/' label="Resume" />
                 <Tab value='/blog' label="Blog" />
             </Tabs>
