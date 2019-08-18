@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Ref } from "react";
+import React, { useEffect, useState } from "react";
 import './Blog.css';
 import RSSParser from 'rss-parser';
 import BlogPost from "../BlogPost/BlogPost";
@@ -18,7 +18,7 @@ type BlogTypes = {
 }
 
 const Blog: React.FC<BlogTypes> = ({isVisible = true, match, history}) => {
-    const [currentPost, setCurrentPost] = useState(match.params.postname);
+    const [currentPost] = useState(match.params.postname);
     const [items, setItems] = useState<undefined | RSSParser.Item[]>([]);
 
     async function fetchData() {
