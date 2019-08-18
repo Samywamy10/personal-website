@@ -29,6 +29,12 @@ section > svg {
     margin: 0 55px 0px calc(55px - 50px); /* subtract width of parent padding */
 }
 
+@media only screen and (max-width : 413px) {
+    section > svg {
+        margin: 0 25px 0 calc(25px - 20px);
+    }
+}
+
 .article-content {
     flex: 9
 }
