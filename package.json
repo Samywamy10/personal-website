@@ -17,6 +17,8 @@
     "axios": "^0.19.0",
     "html-react-parser": "^0.9.1",
     "moment": "^2.24.0",
+    "preact": "^8.5.2",
+    "preact-compat": "^3.19.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
     "react-embed-gist": "^1.0.8",
@@ -33,7 +35,8 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint . --ext .ts,.tsx"
+    "lint": "eslint . --ext .ts,.tsx",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": "react-app"
@@ -49,5 +52,8 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
+  },
+  "devDependencies": {
+    "react-snap": "^1.23.0"
   }
 }

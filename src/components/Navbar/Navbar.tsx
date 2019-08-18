@@ -14,15 +14,14 @@ const Navbar: React.FC<NavbarProps> = ({history}) => {
     const [cardValue, setCardValue] = React.useState('/');
 
     function handleChange(_event: React.ChangeEvent<{}>, newValue: string) {
-        setCardValue(newValue);
-        if(history) {
-            history.push(newValue);
-        }
+        history.push(newValue);
     }
 
     useEffect(() => {
-        if(history.location.pathname === '/blog') {
+        if(history.location.pathname.startsWith('/blog')) {
             setCardValue('/blog')
+        } else {
+            setCardValue(history.location.pathname)
         }
     },[history.location.pathname])
 
