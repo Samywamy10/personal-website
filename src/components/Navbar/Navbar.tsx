@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import './Navbar.css';
 import Card from "../Card/Card";
 import Tabs from '@material-ui/core/Tabs';
@@ -19,6 +19,12 @@ const Navbar: React.FC<NavbarProps> = ({history}) => {
             history.push(newValue);
         }
     }
+
+    useEffect(() => {
+        if(history.location.pathname === '/blog') {
+            setCardValue('/blog')
+        }
+    },[history.location.pathname])
 
     return (
         <Card className="navbar">

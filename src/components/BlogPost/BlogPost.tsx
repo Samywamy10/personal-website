@@ -74,11 +74,11 @@ const BlogPost: React.FC<BlogPostProps> = ({post, scrollTo, onFocus}) => {
                 return res.text()
             })
             .then((body: string) => {
-                const expr = /og:url" content="*(.*?)\"/
+                const expr = /og:url" content="*(.*?)"/
                 const matches = expr.exec(body);
                 let gist =  matches ? matches[1] : '';
                 gist = gist.replace('https://gist.github.com/','');
-                const theGist = <Gist gist={gist} />
+                const theGist = <Gist gist={gist} key={gist} />
                 const theIndex = indexes[index]
                 setElements(v => [...v.slice(0, theIndex),theGist,...v.slice(theIndex+1)])
                 return React.createElement('span', {}, Parser(body));
