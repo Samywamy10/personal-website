@@ -92,7 +92,7 @@ const BlogPost: React.FC<BlogPostProps> = ({post, scrollTo, onFocus}) => {
         <Card className="blog-post">
             <div ref={myRef}>
                 <a href={post.title ? '/blog/' + post.title.replace(/ /g,'-').toLocaleLowerCase() : ''}><h2>{post.title}</h2></a>
-                {publicationDate.format("D MMMM, YYYY")}
+                {publicationDate.format("dddd, Do MMMM, YYYY")}
                 <div className="blog">{elements}</div>
             </div>
         </Card>
