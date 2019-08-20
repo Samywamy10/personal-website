@@ -5,6 +5,7 @@ type ExperienceType = {
     organisation: string,
     startDate: Moment,
     endDate: Moment | null,
+    image?: string,
     description: string,
     skills: string[]
 }
