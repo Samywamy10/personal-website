@@ -11,8 +11,12 @@ import Resume from './components/Resume/Resume';
 import { createMuiTheme } from '@material-ui/core';
 import { orange } from '@material-ui/core/colors';
 import { ThemeProvider } from '@material-ui/styles';
+import ReactGA from 'react-ga';
 
-const App: React.FC= () => {
+const App: React.FC = () => {
+  ReactGA.initialize('UA-150900994-1');
+  ReactGA.pageview(window.location.pathname + window.location.search);
+
   const [items, setItems] = useState<undefined | RSSParser.Item[]>([]);
 
   const theme = createMuiTheme({
