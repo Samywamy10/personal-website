@@ -22,7 +22,7 @@ const Sidebar: React.FC<SidebarProps> = ({className}) => {
           <p>Melbourne, Australia</p>
         </SidebarInformation>
         <SidebarInformation icon={<FontAwesomeIcon className="icon" icon={faUser} />} bigText={false}>
-          <p>I'm currently working as a graduate software developer at Readify. I'm also the managing director of my digital media production company <a href="http://technologetic.com">Technologetic.</a></p>
+          <p>I'm currently working as a graduate software developer at Telstra Purple. I'm also the managing director of my digital media production company <a href="http://technologetic.com">Technologetic.</a></p>
           <p>In my spare time I run the <a href="https://youtube.com/technologetic">Technologetic YouTube channel</a>, take interesting photos and videos, fly my quadcopter and hit the gym.</p>
           <p>I want to help with your next digital project or event. Shoot me an email!</p>
           <p>
