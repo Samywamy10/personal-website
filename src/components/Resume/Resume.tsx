@@ -8,18 +8,18 @@ import { faBriefcase, faGraduationCap } from '@fortawesome/free-solid-svg-icons'
 
 const haileyburyImage = require('./../../images/haileybury.png');
 const palaceImage = require('./../../images/palace.png');
-const readifyImage = require('./../../images/readify.png');
+const telstraPurpleImage = require('./../../images/telstrapurple.png');
 const technologeticImage = require('./../../images/technologetic.png');
 const monashImage = require('./../../images/monash.png');
 
 const workExperiences: ExperienceType[] = [
     {
       title: "Graduate Developer",
-      organisation: "Readify",
+      organisation: "Telstra Purple",
       startDate: Moment("01-01-2018","DD-MM-YYYY"),
       endDate: null,
-      image: readifyImage,
-      description: "Working in Readify's Managed Services team, doing sustained engineering for a range of customers. In the past, I have worked on creating a scheduling web application to reduce time spent allocating resources within the team from 3 days to 3 hours a month, using C# & ASP.NET for the back end, and React+Redux for the interactive UI. I've also worked on other projects using Angular and .NET Core.",
+      image: telstraPurpleImage,
+      description: "Working in the Managed Services team, doing sustained engineering for a range of customers. In the past, I have worked on creating a scheduling web application to reduce time spent allocating resources within the team from 3 days to 3 hours a month, using C# & ASP.NET for the back end, and React+Redux for the interactive UI. I've also worked on other projects using Angular and .NET Core.",
       skills: ["C#","ASP.NET", ".NET Core", "React + Redux", "Angular", "JavaScript", "HTML + CSS", "Scrum", "Kanban", "Azure DevOps", "Git", "stakeholder engagement", "teamwork", "attention to detail"]
     },
     {
