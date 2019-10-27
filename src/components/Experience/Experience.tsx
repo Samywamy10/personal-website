@@ -9,7 +9,7 @@ type ExperienceTypes = {
 const Experience: React.FC<ExperienceTypes> = ({experience}) => {
   return (
     <div className="experience">
-      <h3>{experience.title} - <span>{experience.organisation}</span></h3>
+      <h3>{experience.title} - <span className="organisation">{experience.organisation}</span></h3>
       <span className="date">{experience.startDate.format("MMMM YYYY")} - { experience.endDate ? experience.endDate.format("MMMM YYYY") : "Present"}</span>
       {experience.image ? <img src={experience.image} className="organisation-logo" alt={experience.organisation} /> : ''}
       <p>{experience.description}</p>

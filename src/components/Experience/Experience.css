@@ -4,6 +4,10 @@
     border-bottom: 1px solid #bdbdbd;
 }
 
+.organisation {
+    font-weight:normal;
+}
+
 .experience:last-child {
     margin-bottom:0px;
     padding-bottom:0px;
