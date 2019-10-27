@@ -19,7 +19,21 @@ const workExperiences: ExperienceType[] = [
       startDate: Moment("01-01-2018","DD-MM-YYYY"),
       endDate: null,
       image: telstraPurpleImage,
-      description: "Working in the Managed Services team, doing sustained engineering for a range of customers. In the past, I have worked on creating a scheduling web application to reduce time spent allocating resources within the team from 3 days to 3 hours a month, using C# & ASP.NET for the back end, and React+Redux for the interactive UI. I've also worked on other projects using Angular and .NET Core.",
+      description:
+        <p>
+          Working in the Managed Services team for Telstra Purple (formerly known as Readify), doing sustained engineering for a range of customers. Some of the major projects I have worked on are:
+          <ul>
+            <li>
+              Ongoing maintenance of a Xamarin iOS mobile application with a .NET Framework back end which enables sales people to place orders for customers remotely. This includes constant communication with the client to determine and understand new requirements, as well as responding to changing business requirements.
+            </li>
+            <li>
+              A web application for scheduling which reduced time spent allocating resources within the team from 3 days to 3 hours a month. I was involved from project conception through an iterative development process taking on feedback from key users until delivery. We used C# & ASP.NET for the back end, and React+Redux for the interactive UI.
+            </li>
+            <li>
+              A web application for managing the individual skills of consultants across Telstra Purple. The tool allows workforce planners to identify and more confidently place consultants onto different gigs given their skillsets. From the beginning of the project I was involved, being part of the core team to build, iterate and maintain the site. It is written with Angular, ngrx and a .NET Core backend.
+            </li>
+          </ul>
+        </p>,
       skills: ["C#","ASP.NET", ".NET Core", "React + Redux", "Angular", "JavaScript", "HTML + CSS", "Scrum", "Kanban", "Azure DevOps", "Git", "stakeholder engagement", "teamwork", "attention to detail"]
     },
     {
@@ -46,7 +60,7 @@ const workExperiences: ExperienceType[] = [
       startDate: Moment("05-01-2014","DD-MM-YYYY"),
       endDate: Moment("08-01-2018","DD-MM-YYYY"),
       image: palaceImage,
-      description: "Working as part of a team at the box office, I primarily sell tickets and concession items. This role involves wearing many hats, from being a coffee barista in the morning, to a bartender at night, and a warm welcome and first port of call to cinema patrons throughout the day. I also take on a supervisor role, managing up to ten staff at a time, handling large amounts of money and being ultimately responsible for customer satisfaction at the time.",
+      description: "Worked as part of a team at the box office, I primarily sold tickets and concession items. This role involved wearing many hats, from being a coffee barista in the morning, to a bartender at night, and a warm welcome and first port of call to cinema patrons throughout the day. I was also promoted to a supervisor role, managing up to ten staff at a time, handling large amounts of money and being ultimately responsible for customer satisfaction at any given time.",
       skills: ["PoS and EFTPOS operation", "responsible service of alcohol", "teamwork", "customer service", "cleaning", "restocking", "closing", "AV programming & operation"]
     },
     {

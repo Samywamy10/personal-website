@@ -24,3 +24,11 @@
     width:100px;
     margin:0 0 30px 30px;
 }
+
+.description ul > li {
+    margin-bottom:10px;
+}
+
+.description ul > li:last-child {
+    margin-bottom:0px;
+}

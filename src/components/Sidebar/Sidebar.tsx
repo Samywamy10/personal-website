@@ -35,7 +35,7 @@ const Sidebar: React.FC<SidebarProps> = ({className}) => {
           <p>sam@samjwright.com</p>
         </SidebarInformation>
         <SidebarInformation icon={<FontAwesomeIcon className="icon" icon={faCogs} />} bigText={false}>
-          <p><strong>Skills:</strong> Python, PHP, C#, ASP.Net, .NET Core, Swift, Xamarin, Javascript: React+Redux, Angular, NodeJS, jQuery, HTML + CSS, R, Tableau, SQL, NoSQL, Git, Azure DevOps, Scrum, Adobe Creative Suite, Photography, Videography, Video editing</p>
+          <p><strong>Skills:</strong> Python, Javascript: React+Redux, Angular, NodeJS, C#, ASP.Net, .NET Core, Swift, Xamarin, HTML + CSS, PHP, jQuery, R, Tableau, SQL, NoSQL, Git, Azure DevOps, Scrum, Adobe Creative Suite, Photography, Videography, Video editing</p>
         </SidebarInformation>
     </aside>
   );

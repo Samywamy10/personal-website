@@ -6,7 +6,7 @@ type ExperienceType = {
     startDate: Moment,
     endDate: Moment | null,
     image?: string,
-    description: string,
+    description: React.ReactNode,
     skills: string[]
 }
 
