@@ -4,7 +4,7 @@ import profile from './../../images/profile.jpg'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faUser, faHome, faEnvelope, faCogs } from '@fortawesome/free-solid-svg-icons'
 import SidebarInformation from '../SidebarInformation/SidebarInformation';
-import { faLinkedin, faGithub, faMedium } from '@fortawesome/free-brands-svg-icons'
+import { faLinkedin, faGithub, faMedium, faTwitter } from '@fortawesome/free-brands-svg-icons'
 
 type SidebarProps = {
   className: string;
@@ -27,6 +27,7 @@ const Sidebar: React.FC<SidebarProps> = ({className}) => {
           <p>I want to help with your next digital project or event. Shoot me an email!</p>
           <p>
             <a href="https://www.linkedin.com/in/sjwright10/"><FontAwesomeIcon className="social-icon" icon={faLinkedin} /></a>
+            <a href="https://twitter.com/samywamy10"><FontAwesomeIcon className="social-icon" icon={faTwitter} /></a>
             <a href="https://github.com/Samywamy10"><FontAwesomeIcon className="social-icon" icon={faGithub} /></a>
             <a href="https://medium.com/@samjwright"><FontAwesomeIcon className="social-icon" icon={faMedium} /></a>
           </p>
