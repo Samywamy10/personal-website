@@ -14,14 +14,22 @@ const monashImage = require('./../../images/monash.png');
 
 const workExperiences: ExperienceType[] = [
     {
+      title: "Developer",
+      organisation: "Telstra Purple",
+      startDate: Moment("01-01-2020","DD-MM-YYYY"),
+      endDate: null,
+      image: telstraPurpleImage,
+      description: <p>Working in the Managed Services team for Telstra Purple (formerly known as Readify), doing sustained engineering for a range of customers.</p>,
+      skills: []
+    },
+    {
       title: "Graduate Developer",
       organisation: "Telstra Purple",
       startDate: Moment("01-01-2018","DD-MM-YYYY"),
-      endDate: null,
+      endDate: Moment("31-12-2019","DD-MM-YYYY"),
       image: telstraPurpleImage,
       description:
         <p>
-          Working in the Managed Services team for Telstra Purple (formerly known as Readify), doing sustained engineering for a range of customers. Some of the major projects I have worked on are:
           <ul>
             <li>
               Ongoing maintenance of a Xamarin iOS mobile application with a .NET Framework back end which enables sales people to place orders for customers remotely. This includes constant communication with the client to determine and understand new requirements, as well as responding to changing business requirements.
