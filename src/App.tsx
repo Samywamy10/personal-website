@@ -43,7 +43,7 @@ const App: React.FC = () => {
       <ThemeProvider theme={theme}>
         <div className="app">
           <Sidebar className="sidebar"/>
-          <div className="content">
+          <div className="content">Changes
             <Navbar />
             <Route exact path="/" component={Resume} />
             <Route path={["/blog/:postname","/blog"]} component={(props: BlogTypes) => <Blog {...props} items={items ? items : []} />} />
