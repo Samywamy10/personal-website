@@ -22,7 +22,7 @@ const workExperiences: ExperienceType[] = [
       description: <p>
         Working as a consultant solving business problems for a number of customers.
         <ul>
-          <li>Updating and maintaining a coronavirus web dashboard for the New Zealand federal government</li>
+          <li>Updating and maintaining a coronavirus web dashboard for the Australian federal government</li>
           <li>
           Transforming an out of date and non-performant AngularJS/.NET based web form to a React/GraphQL based incident management system for an electricity regulator</li>
           <li>Creating a native iOS application for creating and maintaining bookings within an events space. Using SwiftUI and Google Firebase functions</li>
