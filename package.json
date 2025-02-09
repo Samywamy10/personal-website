@@ -17,7 +17,7 @@
     "@types/react-router-dom": "^4.3.4",
     "@types/react-swipeable-views": "^0.13.0",
     "html-react-parser": "^0.9.1",
-    "moment": "^2.24.0",
+    "moment": "^2.30.1",
     "preact-compat": "^3.19.0",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
