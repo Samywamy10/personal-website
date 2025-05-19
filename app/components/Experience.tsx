@@ -13,7 +13,7 @@ export default function Experience({
         {image && (
           <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
             <Image
-              src={`/personal-website/${image}`}
+              src={`${image}`}
               alt={organisation}
               fill
               className="object-cover"

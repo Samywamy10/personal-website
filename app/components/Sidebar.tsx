@@ -6,7 +6,7 @@ export default function Sidebar() {
       <div className="flex flex-col items-center">
         <div className="overflow-hidden w-full">
           <Image
-            src="/personal-website/profile.jpeg"
+            src="profile.jpeg"
             alt="Profile"
             layout="responsive"
             width={500}
