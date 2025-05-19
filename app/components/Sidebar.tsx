@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Sidebar() {
   return (
-    <aside className="w-full md:w-1/4 bg-sidebar dark:bg-sidebarDark text-white dark:text-white shadow-neutral-400 shadow-lg dark:shadow-none text-left">
+    <aside className="w-full md:w-1/3 lg:w-1/4 bg-sidebar dark:bg-sidebarDark text-white dark:text-white shadow-neutral-400 shadow-lg dark:shadow-none text-left">
       <div className="flex flex-col items-center">
         <div className="overflow-hidden w-full">
           <Image

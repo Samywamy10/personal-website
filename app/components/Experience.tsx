@@ -9,7 +9,7 @@ export default function Experience({
 }: ExperienceType) {
   return (
     <div className="py-8 border-b border-gray-200 dark:border-gray-700 last:border-0">
-      <div className="flex items-start gap-4">
+      <div className="flex items-start gap-4 flex-col md:flex-row">
         {image && (
           <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">
             <Image
