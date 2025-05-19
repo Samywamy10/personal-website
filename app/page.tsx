@@ -24,9 +24,3 @@ export default function Home() {
     </div>
   );
 }
-
-export function List({ children }: { children: React.ReactNode }) {
-  return (
-    <ul className="list-disc list-inside flex flex-col gap-1">{children}</ul>
-  );
-}

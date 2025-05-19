@@ -6,6 +6,7 @@ const palaceImage = "/palace.png";
 const monashImage = "/monash.png";
 const canva = "/canva.jpg";
 import type { ExperienceType } from "../types/experience";
+import { List } from "../components/List";
 
 export const workExperiences: ExperienceType[] = [
   {
@@ -46,12 +47,12 @@ export const workExperiences: ExperienceType[] = [
                   Lead the development of a new landing page Templates
                 </strong>
                 , moving away from a complex to discern and static presentation
-                of Canva's extensive template library to a personalised and
+                of Canva&apos;s extensive template library to a personalised and
                 simplified homepage experience.
               </li>
               <li className="leading-relaxed">
                 <strong>
-                  Re-prioritised team's focus using data-driven insights
+                  Re-prioritised team&apos;s focus using data-driven insights
                 </strong>{" "}
                 by developing and circulating comprehensive analyses connecting
                 project investment to usage and engagement metrics, directly
@@ -337,7 +338,3 @@ export const workExperiences: ExperienceType[] = [
     ],
   },
 ];
-
-export function List({ children }: { children: React.ReactNode }) {
-  return <ul className="list-disc pl-5 flex flex-col gap-1">{children}</ul>;
-}
