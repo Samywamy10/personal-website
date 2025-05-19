@@ -94,10 +94,8 @@ export default function Sidebar() {
             <h3 className="text-lg font-semibold">Skills:</h3>
             <p className="text-sm">
               {/* Can this pull from Job experiences? */}
-              Python, JavaScript, React+Redux, Angular, Node.js, C#, ASP.NET,
-              .NET Core, Swift, Xamarin, HTML + CSS, PHP, jQuery, R, Tableau,
-              SQL, NoSQL, Git, Azure DevOps, Scrum, Adobe Creative Suite,
-              Photography, Videography, Video editing
+              JavaScript, React, Node.js, HTML + CSS, C#, Java, Swift, Python,
+              SQL, NoSQL, Git
             </p>
           </div>
         </div>
