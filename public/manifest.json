@@ -1,8 +1,0 @@
-{
-  "short_name": "Sam's Website",
-  "name": "Sam Wright's Website",
-  "start_url": ".",
-  "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
-}
