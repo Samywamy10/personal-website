@@ -42,8 +42,8 @@ export default function Sidebar() {
           </div>
           <div className="flex flex-col gap-4 text-sm" id="bio">
             <p>
-              I'm a product-minded Frontend Engineer at Canva with a particular
-              passion for using data to help drive decisions.
+              I&apos;m a product-minded Frontend Engineer at Canva with a
+              particular passion for using data to help drive decisions.
             </p>
           </div>
           <div id="contact" className="flex flex-col gap-3">

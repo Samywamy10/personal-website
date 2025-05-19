@@ -34,7 +34,7 @@ export const workExperiences: ExperienceType[] = [
             <List>
               <li className="leading-relaxed">
                 <strong>Led the development of a new search experience</strong>,
-                pivoting the team's focus to launch a new unified search
+                pivoting the team&apos;s focus to launch a new unified search
                 platform in time for millions of users to use following a major
                 public launch. A major part of this project was the development
                 of a new, scalable Backend-For-Frontend (BFF), allowing for both
