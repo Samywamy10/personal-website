@@ -31,7 +31,7 @@ export const workExperiences: ExperienceType[] = [
               >
                 Canva&apos;s Templates Marketplace
               </a>
-              , enabling millions of users begin designing every day.
+              , enabling millions of users to begin designing every day.
             </p>
             <List>
               <li className="leading-relaxed">
@@ -45,7 +45,7 @@ export const workExperiences: ExperienceType[] = [
               </li>
               <li className="leading-relaxed">
                 <strong>
-                  Lead the development of a new landing page Templates
+                  Lead the development of a new Templates landing page
                 </strong>
                 , moving away from a complex to discern and static presentation
                 of Canva&apos;s extensive template library to a personalised and
