@@ -1,14 +1,19 @@
 import { ExperienceType } from "../types/experience";
 import Image from "next/image";
+import { slugifyWithExperience } from "./slugify";
 
 export default function Experience({
+  title,
   organisation,
   image,
   jobs,
   skills,
 }: ExperienceType) {
   return (
-    <div className="py-8 border-b border-gray-200 dark:border-gray-700 last:border-0">
+    <div
+      id={slugifyWithExperience({ title, organisation, jobs, skills })}
+      className="py-8 border-b border-gray-200 dark:border-gray-700 last:border-0"
+    >
       <div className="flex items-start gap-4 flex-col md:flex-row">
         {image && (
           <div className="relative w-16 h-16 rounded-full overflow-hidden flex-shrink-0">

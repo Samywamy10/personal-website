@@ -3,6 +3,7 @@ import type { ExperienceType } from "../types/experience";
 
 export const educationExperiences: ExperienceType[] = [
   {
+    title: "Education",
     jobs: [
       {
         title: "Bachelor of Informatics & Computation Advanced (Honours)",
@@ -22,6 +23,7 @@ export const educationExperiences: ExperienceType[] = [
     skills: [],
   },
   {
+    title: "Education",
     jobs: [
       {
         title: "VCE",

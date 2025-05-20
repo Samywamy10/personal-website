@@ -10,6 +10,7 @@ import { List } from "../components/List";
 
 export const workExperiences: ExperienceType[] = [
   {
+    title: "Work",
     organisation: "Canva",
     image: canva,
     jobs: [
@@ -143,6 +144,7 @@ export const workExperiences: ExperienceType[] = [
     ],
   },
   {
+    title: "Work",
     organisation: "Telstra Purple",
     image: telstraPurpleImage,
     jobs: [
@@ -227,6 +229,7 @@ export const workExperiences: ExperienceType[] = [
     skills: ["C#", ".NET Core", "React w/ Redux", "Angular", "JavaScript"],
   },
   {
+    title: "Work",
     organisation: "Technologetic",
     image: technologeticImage,
     jobs: [
@@ -257,6 +260,7 @@ export const workExperiences: ExperienceType[] = [
     skills: ["Videography", "Public speaking"],
   },
   {
+    title: "Work",
     organisation: "Haileybury",
     image: haileyburyImage,
     jobs: [
@@ -282,6 +286,7 @@ export const workExperiences: ExperienceType[] = [
     ],
   },
   {
+    title: "Work",
     organisation: "Palace Cinemas",
     image: palaceImage,
     jobs: [
@@ -311,6 +316,7 @@ export const workExperiences: ExperienceType[] = [
     ],
   },
   {
+    title: "Work",
     organisation: "Monash University",
     image: monashImage,
     jobs: [
