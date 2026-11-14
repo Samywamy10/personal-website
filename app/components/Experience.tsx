@@ -38,12 +38,14 @@ export default function Experience({
                 {new Date(job.startDate).toLocaleString("en-US", {
                   month: "long",
                   year: "numeric",
+                  timeZone: "UTC",
                 })}{" "}
                 -{" "}
                 {job.endDate
                   ? new Date(job.endDate).toLocaleString("en-US", {
                       month: "long",
                       year: "numeric",
+                      timeZone: "UTC",
                     })
                   : "Present"}
               </p>
