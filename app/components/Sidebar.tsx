@@ -139,12 +139,12 @@ export default function Sidebar() {
                 d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
               />
             </svg>
-            <span>Melbourne, Australia</span>
+            <span>San Francisco, USA</span>
           </div>
         </div>
         <div className="flex flex-col gap-4 text-sm" id="bio">
           <p>
-            I&apos;m a product-minded Frontend Engineer at Canva with a
+            I&apos;m a product-minded Software Engineer at Apple with a
             particular passion for using data to help drive decisions.
           </p>
         </div>

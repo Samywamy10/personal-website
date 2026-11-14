@@ -5,10 +5,28 @@ const haileyburyImage = "/haileybury.png";
 const palaceImage = "/palace.png";
 const monashImage = "/monash.png";
 const canva = "/canva.jpg";
+const apple = "/apple.svg";
 import type { ExperienceType } from "../types/experience";
 import { List } from "../components/List";
 
 export const workExperiences: ExperienceType[] = [
+  {
+    title: "Work",
+    organisation: "Apple",
+    image: apple,
+    jobs: [
+      {
+        title: "Software Engineer",
+        startDate: format(
+          parse("01-12-2025", "dd-MM-yyyy", new Date()),
+          "yyyy-MM-dd"
+        ),
+        endDate: null,
+        description: null,
+      },
+    ],
+    skills: [],
+  },
   {
     title: "Work",
     organisation: "Canva",
@@ -20,11 +38,14 @@ export const workExperiences: ExperienceType[] = [
           parse("01-12-2023", "dd-MM-yyyy", new Date()),
           "yyyy-MM-dd"
         ),
-        endDate: null,
+        endDate: format(
+          parse("01-11-2025", "dd-MM-yyyy", new Date()),
+          "yyyy-MM-dd"
+        ),
         description: (
           <div>
             <p className="mb-3">
-              Currently leading the Browse Experience team working on{" "}
+              Led the Browse Experience team working on{" "}
               <a
                 href="https://canva.com/templates"
                 className="hover:underline text-gray-600 dark:text-gray-400"
